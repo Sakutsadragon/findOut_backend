@@ -13,9 +13,8 @@ module.exports.registers = async (req, res, next) => {
                       ctype,
                       placementMail,
                       address,
+                      placeBroucher
             } = req.body;
-
-            let placeBroucher = req.file.filename;
             const user = await campusUser.create({
                       userId,
                       collageName,
